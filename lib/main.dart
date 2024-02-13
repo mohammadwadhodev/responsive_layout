@@ -1,9 +1,6 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/layout/layout.dart';
-import 'package:learn_flutter/screens/desktop_layout.dart';
-import 'package:learn_flutter/screens/mobile_layout.dart';
 
 
 void main() {
@@ -12,7 +9,7 @@ void main() {
         dragDevices: {PointerDeviceKind.mouse, PointerDeviceKind.touch, PointerDeviceKind.stylus, PointerDeviceKind.unknown},
       ),
       debugShowCheckedModeBanner: false,
-      home: MyApp()));
+      home: const MyApp()));
 }
 
 class MyApp extends StatefulWidget {
@@ -25,9 +22,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return ResponsiveLayout(
-        desktopLayout: DesktopLayout(),
-        mobileLayout: MobileLayout());
+    return const Scaffold(
+      body: Center(child: Text("Basic class"),),
+    );
   }
 
 }
