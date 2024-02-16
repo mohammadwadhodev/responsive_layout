@@ -21,16 +21,16 @@ class MyGoRouter{
      // },
 
       routes: [
-        GoRoute(
-            name:MyAppRoutes.myAppRoute,
-            path: "/",builder: (context,state) => const MyApp()),
-        GoRoute(
-            name:MyAppRoutes.homeScreenRoute,
-            path: "${MyAppRoutes.homeScreenRoute}/:data",
-            builder: (context,state) =>  HomeScreen(name: state.pathParameters['data'])),
-        GoRoute(
-            name: MyAppRoutes.thirdScreenRoute,
-            path: MyAppRoutes.thirdScreenRoute,builder: (context,state) => const ThirdScreen()),
+        // GoRoute(
+        //     name:MyAppRoutes.myAppRoute,
+        //     path: "/",builder: (context,state) => const MyApp()),
+        // GoRoute(
+        //     name:MyAppRoutes.homeScreenRoute,
+        //     path: "${MyAppRoutes.homeScreenRoute}/:data",
+        //     builder: (context,state) =>  HomeScreen(name: state.pathParameters['data'])),
+        // GoRoute(
+        //     name: MyAppRoutes.thirdScreenRoute,
+        //     path: MyAppRoutes.thirdScreenRoute,builder: (context,state) => const ThirdScreen()),
       ]
   );
 }
