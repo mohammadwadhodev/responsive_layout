@@ -7,7 +7,7 @@ import 'my_resume.dart';
 
 void main() {
   runApp(MaterialApp(
-      scrollBehavior: MaterialScrollBehavior().copyWith(
+      scrollBehavior: const MaterialScrollBehavior().copyWith(
         dragDevices: {PointerDeviceKind.mouse, PointerDeviceKind.touch, PointerDeviceKind.stylus, PointerDeviceKind.unknown},
       ),
       debugShowCheckedModeBanner: false,
